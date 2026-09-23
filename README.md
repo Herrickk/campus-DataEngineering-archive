@@ -32,7 +32,7 @@ The attached ML report was trained on an earlier version of the pipeline that ha
 ## Machine Learning Results & Data Integrity
 Initially, the classification model achieved an artificially high accuracy of **94%** (as documented in the attached PDF report). However, upon further investigation, we discovered this was caused by a data duplication bug in the ETL pipeline (expanding the dataset to ~88k rows), which led to data leakage during model training.
 
-I have since **debugged and fixed the Pentaho ETL pipeline** in this repository to correctly output the clean, unique records. 
+The Pentaho ETL pipeline has been **debugged and fixed** in this repository to correctly output the clean, unique records. 
 * Real Accuracy : **74%**
 
 You can view the code for the classification model here:
