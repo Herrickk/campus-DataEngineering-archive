@@ -17,7 +17,7 @@ We modeled the data into a Star Schema to make it easier for analytical queries.
 ## ETL Process
 The ETL process is built using Pentaho. We extracted the raw CSV, cleaned the data (like splitting multiple authors into separate rows), and generated surrogate keys. Everything is automated using a single Master Job (.kjb) that runs all transformations (.ktr) sequentially.
 
-![Pentaho Job](job.png)
+![Pentaho Job](Job.png)
 
 ## Machine Learning Results
 We trained a Random Forest classifier to predict book ratings (Low <= 3.9, High >= 4.0).
