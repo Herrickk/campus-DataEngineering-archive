@@ -39,6 +39,6 @@ You can view the code for the classification model here:
 * https://colab.research.google.com/drive/1l7Mn3AJItXddUPvhUO9OO5UelUDyfk2R?usp=sharing
 
 ## Team Members
-* Herrick Fabian - Data Engineering (Pentaho ETL) & Report
-* Christian Putra Dwiyan Setyo Pradana - Machine Learning & Report
-* Dideo Setia Simangunsong - Report
+* Herrick Fabian - Data Engineering (Pentaho ETL) & Technical Documentation
+* Christian Putra Dwiyan Setyo Pradana - Machine Learning & Model Evaluation
+* Dideo Setia Simangunsong - Data Analysis & Technical Writing
