@@ -17,7 +17,7 @@ We modeled the data into a Star Schema to make it easier for analytical queries.
 ## ETL Process
 The ETL process is built using Pentaho. We extracted the raw CSV, cleaned the data (like splitting multiple authors into separate rows), and generated surrogate keys. Everything is automated using a single Master Job (.kjb) that runs all transformations (.ktr) sequentially.
 
-![Pentaho Job](docs/pentaho_job_orchestration.png)
+![Pentaho Job](job.png)
 
 ## Machine Learning Results
 We trained a Random Forest classifier to predict book ratings (Low <= 3.9, High >= 4.0).
@@ -28,3 +28,8 @@ You can read the full analysis in the `docs/Data_Engineering_Final_Report.pdf`.
 
 ## Note on Data Duplication
 The attached ML report was trained on an earlier version of the pipeline that had a duplication bug (resulting in ~88k rows). The Pentaho files uploaded in this repository have been fixed and now correctly output the clean ~11,000 unique records.
+
+## Team Members
+* Herrick Fabian - Data Engineering (Pentaho ETL) & Report
+* Christian Putra Dwiyan Setyo Pradana - Machine Learning & Report
+* Dideo Setia Simangunsong - Report
