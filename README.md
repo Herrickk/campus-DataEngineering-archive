@@ -12,7 +12,7 @@ This is a university project where we built an ETL pipeline to process a Goodrea
 We modeled the data into a Star Schema to make it easier for analytical queries. It consists of 1 Fact table and 5 Dimension tables:
 * Dim Author, Dim Book, Dim Publisher, Dim Language, Dim Time.
 
-![Star Schema Diagram](docs/star_schema_diagram.png)
+![Star Schema Diagram](star_schema_project.drawio.png)
 
 ## ETL Process
 The ETL process is built using Pentaho. We extracted the raw CSV, cleaned the data (like splitting multiple authors into separate rows), and generated surrogate keys. Everything is automated using a single Master Job (.kjb) that runs all transformations (.ktr) sequentially.
