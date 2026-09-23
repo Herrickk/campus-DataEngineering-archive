@@ -24,7 +24,7 @@ We trained a Random Forest classifier to predict book ratings (Low <= 3.9, High 
 * Accuracy: 94%
 * Key Finding: A book's page count and publication year affect the rating more than the author or publisher's name.
 
-You can read the full analysis in the `Data Engineering_FinalReport.pdf`.
+You can read the full analysis in the `Data Engineering_Final Report (1).pdf`.
 
 ## Note on Data Duplication
 The attached ML report was trained on an earlier version of the pipeline that had a duplication bug (resulting in ~88k rows). The Pentaho files uploaded in this repository have been fixed and now correctly output the clean ~11,000 unique records.
