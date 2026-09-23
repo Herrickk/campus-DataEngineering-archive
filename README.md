@@ -24,10 +24,19 @@ We trained a Random Forest classifier to predict book ratings (Low <= 3.9, High 
 * Accuracy: 94%
 * Key Finding: A book's page count and publication year affect the rating more than the author or publisher's name.
 
-You can read the full analysis in the `docs/Data_Engineering_Final_Report.pdf`.
+You can read the full analysis in the `Data Engineering_FinalReport.pdf`.
 
 ## Note on Data Duplication
 The attached ML report was trained on an earlier version of the pipeline that had a duplication bug (resulting in ~88k rows). The Pentaho files uploaded in this repository have been fixed and now correctly output the clean ~11,000 unique records.
+
+## Machine Learning Results & Data Integrity
+Initially, the classification model achieved an artificially high accuracy of **94%** (as documented in the attached PDF report). However, upon further investigation, we discovered this was caused by a data duplication bug in the ETL pipeline (expanding the dataset to ~88k rows), which led to data leakage during model training.
+
+I have since **debugged and fixed the Pentaho ETL pipeline** in this repository to correctly output the clean, unique records. 
+* Real Accuracy : **74%**
+
+You can view the code for the classification model here:
+* https://colab.research.google.com/drive/1l7Mn3AJItXddUPvhUO9OO5UelUDyfk2R?usp=sharing
 
 ## Team Members
 * Herrick Fabian - Data Engineering (Pentaho ETL) & Report
